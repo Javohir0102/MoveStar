@@ -1,14 +1,15 @@
 ﻿using System;
-
 class Program
 {
     static void Main()
     {
+        Console.Title = "Move star with cursor";
+        Console.Write("Enter the moving element -> ");
+        string movingElement = Console.ReadLine();
+
         ConsoleKeyInfo keyInfo;
         int cursorLeft = Console.CursorLeft;
         int cursorTop = Console.CursorTop;
-
-        Console.WriteLine("Use arrow keys to move the cursor. Press 'Esc' to exit.");
 
         while (true)
         {
@@ -21,37 +22,58 @@ class Program
                     if (cursorLeft > 0)
                     {
                         cursorLeft--;
-                        Console.SetCursorPosition(cursorLeft, cursorTop);
-                        Console.Write('*');
+                    }
+                    else
+                    {
+                        cursorLeft = Console.WindowWidth;
+                        cursorLeft--;
                     }
                     break;
+
                 case ConsoleKey.RightArrow:
                     if (cursorLeft < Console.WindowWidth - 1)
                     {
                         cursorLeft++;
-                        Console.SetCursorPosition(cursorLeft, cursorTop);
-                        Console.Write('*');
+                    }
+                    else
+                    {
+                        cursorLeft = 0;
+                        cursorLeft++;
                     }
                     break;
+
                 case ConsoleKey.UpArrow:
                     if (cursorTop > 0)
                     {
                         cursorTop--;
-                        Console.SetCursorPosition(cursorLeft, cursorTop);
-                        Console.Write('*');
+                    }
+                    else
+                    {
+                        cursorTop = Console.WindowHeight;
+                        cursorTop--;
                     }
                     break;
+
                 case ConsoleKey.DownArrow:
                     if (cursorTop < Console.WindowHeight - 1)
                     {
                         cursorTop++;
-                        Console.SetCursorPosition(cursorLeft, cursorTop);
-                        Console.Write('*');
+                    }
+                    else
+                    {
+                        cursorTop = 0;
+                        cursorTop++;
                     }
                     break;
+
                 case ConsoleKey.Escape:
                     return; // Exit the loop and program
             }
+
+            Console.SetCursorPosition(cursorLeft, cursorTop);
+            Console.Write(movingElement);
+
         }
     }
 }
+
