@@ -9,7 +9,7 @@ this program is designed to move the information entered by the user. You can mo
 ## Code explanation
 
 - inputs
-        ```cs
+  ```cs
         Console.Title = "Move star with cursor";
         Console.Write("Enter the moving element -> ");
         string movingElement = Console.ReadLine();
@@ -20,7 +20,7 @@ this program is designed to move the information entered by the user. You can mo
 
 
 - codes
-       ![all codes](https://github.com/Javohir0102/MoveStar/blob/main/Asset/SourseCode%20(1).JPG)
+        ![all codes](https://github.com/Javohir0102/MoveStar/blob/main/Asset/SourseCode%20(1).JPG)
 
 - result
         ![videos](https://github.com/Javohir0102/MoveStar/blob/main/Asset/Video-20240614_160938-Meeting%20Recording.mp4)
