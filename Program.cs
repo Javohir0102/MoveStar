@@ -37,7 +37,7 @@ class Program
                     }
                     else
                     {
-                        cursorLeft = 0;
+                        cursorLeft = -1;
                         cursorLeft++;
                     }
                     break;
@@ -61,7 +61,7 @@ class Program
                     }
                     else
                     {
-                        cursorTop = 0;
+                        cursorTop = -1;
                         cursorTop++;
                     }
                     break;
@@ -76,4 +76,3 @@ class Program
         }
     }
 }
-
