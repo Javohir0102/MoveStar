@@ -18,10 +18,10 @@ this program is designed to move the information entered by the user. You can mo
         int cursorLeft = Console.CursorLeft;
         int cursorTop = Console.CursorTop;
 
-  - codes
-            [all codes](https://github.com/Javohir0102/MoveStar/blob/main/Asset/SourseCode%20(1).JPG)
+- codes
+       ![all codes](https://github.com/Javohir0102/MoveStar/blob/main/Asset/SourseCode%20(1).JPG)
 
-  - result
-            [videos](https://github.com/Javohir0102/MoveStar/blob/main/Asset/Video-20240614_160938-Meeting%20Recording.mp4)
+- result
+        ![videos](https://github.com/Javohir0102/MoveStar/blob/main/Asset/Video-20240614_160938-Meeting%20Recording.mp4)
             
 
